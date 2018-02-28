@@ -1,0 +1,67 @@
+# cs101-ITC-s18A
+Level 1
+Q.No.1
+The exchange rate is $1 = £0.65. You’ve got $200, so write some Python to multiply 200 by 0.65 to see how many pounds you have.
+>>> 200 * 0.65
+130.0
+
+Q.No.2
+The exchange teller charges $2 to make an exchange, so you also need to subtract it from your total dollars.
+Start by writing the same code you just wrote — 200 * 0.65 — but also remove 2 from your total dollars before multiplying 
+it by the exchange rate.
+>>> (200 * 0.65) - (2 * 0.65)
+128.7
+
+Q.No.3
+start by writing your previous code one more time — (200 - 2) * 0.65 — and this time also calculate how many pounds
+would be left after we spend £ 100.
+>>> ((200 - 2) * 0.65 ) - 100
+28.7
+
+Level 2
+Q .No. 1
+What is an example of a good variable name if you're following the PEP8 style guide?
+. $_money
+. USCurrency
+. m
+. us_currency
+Answer : us_currency
+
+Q.No.2
+What value would be stored in the variable human_age after running the following lines of code?
+dog_age = 10
+dog_multiplier = 7
+human_age = dog_age * dog_multiplier
+70
+
+Q No. 3
+create a variable named x_rate for the exchange rate equal to 0.65, which converts dollars to pounds.
+x_rate = 0.65
+Q.No.4
+Now create variable total_dollars and set it equal to 200.
+total_dollars = 200
+Q.No.5
+Now create a fee variable with the value of 2.
+fee = 2
+Q.No.6
+Finally, create a variable called total_pounds and use it to store the calculated number of pounds you have after visiting the exchange teller.
+Remember, the formula for that calculation is the ( total_dollars minus the fee) multiplied by the x_rate.
+Answer
+total_pounds = (total_dollars - fee) * x_rate
+Q.No.7
+Convert your pounds to dollars by assigning to total_dollars the following: total_pounds divided by the x_rate minus the fee.
+Answer
+total_dollars = total_pounds / x_rate - fee
+
+Q.No.8
+If you type total_dollars and press enter, you'll see the result is a really long float — 42.15384615384618.
+Since the bank teller can only give us whole dollars, we'll need to round the result. First, let's import the math library by entering import math. Then, round our result down using math.floor(total_dollars) .
+import math
+math.floor(total_dollars)
+
+Level 2
+Q.No.1
+What would get printed after the following two lines of code are run?
+
+greeting = "G'day"
+print(greeting)
